@@ -14,14 +14,14 @@
       <div id="main">
         <div class="room">
           
-          <div class="remote-streams" id="js-remote-streams">
-            <!-- Remort streams -->
+          <div class="streams" id="js-remote-streams">
+            <!-- Remote streams -->
           </div>
-          <div>
-            <video class="local-stream" id="js-local-stream"></video>
-          </div>
+          <video class="local-stream" id="js-local-stream"></video>
         </div>
         <div class="menu">
+          <button id="js-unmuto-trigger">unmuto</button>
+          <button id="js-muto-trigger">muto</button>
           <input type="text" value="meganeroom" placeholder="Room Name" id="js-room-id">
           <button id="js-join-trigger">Join</button>
           <button id="js-leave-trigger">Leave</button>
@@ -39,5 +39,6 @@
     <script src="//cdn.webrtc.ecl.ntt.com/skyway-4.4.5.js"></script>
     <script src="./scripts/key.js"></script>
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/renderer.js"></script>
   </body>
 </html>
