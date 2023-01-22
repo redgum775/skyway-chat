@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SkyWay - Simple Room Chat</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Simple Room Chat</h1>
+    </header>
+    <div class="container">
+      <div id="main">
+        <div class="room">
+          <div class="streams" id="js-remote-streams">
+            <!-- Remort streams -->
+            <video class="local-stream" id="js-local-stream"></video>
+          </div>
+        </div>
+        <div class="menu">
+          <button id="js-unmuto-trigger">unmuto</button>
+          <button id="js-muto-trigger">muto</button>
+          <input type="text" value="meganeroom" placeholder="Room Name" id="js-room-id">
+          <button id="js-join-trigger">Join</button>
+          <button id="js-leave-trigger">Leave</button>
+        </div>
+      </div>
+      <div id="sub">
+        <p class="messages-title">Messages</p>
+        <pre class="messages" id="js-messages"></pre>
+        <div class="messages-send">
+          <input class="message-text" type="text" id="js-local-text">
+          <button class="message-send-button" id="js-send-trigger">Send</button>
+        </div>
+      </div>
+    </div>
+    <script src="//cdn.webrtc.ecl.ntt.com/skyway-4.4.5.js"></script>
+    <script src="./scripts/key.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/click-join-button.js"></script>
+    <script src="./scripts/renderer.js"></script>
+  </body>
+</html>
